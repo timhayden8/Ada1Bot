@@ -5,4 +5,5 @@ def codescrape():
     soup = BeautifulSoup(page.content, 'html.parser')
     weapons = soup.find_all('ul')[2]
     weapons = weapons.text
+    return weapons
 codescrape()
